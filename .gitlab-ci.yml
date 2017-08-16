@@ -1,0 +1,14 @@
+image: mabako/fdroidserver:latest
+
+before_script:
+  - fdroid lint
+
+pages:
+  stage: deploy
+  script:
+  - fdroid update
+  artifacts:
+    paths:
+    - repo
+  only:
+  - master
