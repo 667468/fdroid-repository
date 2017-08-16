@@ -1,14 +1,18 @@
-image: mabako/fdroidserver:latest
+image: openjdk:latest
 
 before_script:
-  - fdroid lint
+  - apt-get update && apt-get -y install fdroidserver
+  - chmod 600 config.py
 
 pages:
   stage: deploy
   script:
-  - fdroid update
+  - fdroid lint
+  - fdroid update --create-key --create-metadata
+  - mkdir /fdroid && fdroid server update
+  - cp -R /fdroid public
   artifacts:
     paths:
-    - repo
+    - public
   only:
   - master
