@@ -1,15 +1,13 @@
-repo_url = "https://rfc2822.pages.io/fdroid-firefox/"
+repo_url = "https://rfc2822.gitlab.io/fdroid-firefox/fdroid/"
 repo_name = "Firefox F-Droid repo (inofficial)"
 repo_icon = "fdroid-icon.png"
 repo_description = """
-Firefox
+Inofficial Firefox repo (.apk from mozilla.org)
 """
 
 archive_older = 0
 
-repo_keyalias = "not_required"
-keystore = "not_required.bks"
-keystorepass = "this-is-never-used"
-keypass = "this-is-never-used"
-
 local_copy_dir = "/fdroid"
+
+keystore = "keystore.bks"
+repo_keyalias = "rfc2822"

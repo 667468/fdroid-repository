@@ -1,14 +1,18 @@
 image: openjdk:latest
 
 before_script:
+  - echo $fdroid_keystore_base64 | base64 -d >keystore.bks
+  - chmod 600 config.py keystore.bks
+  - mkdir -p repo
   - apt-get update && apt-get -y install fdroidserver
-  - chmod 600 config.py
 
 pages:
   stage: deploy
   script:
-  - fdroid lint
-  - fdroid update --create-key --create-metadata
+  - cd repo && wget -nc --content-disposition "https://download.mozilla.org/?product=fennec-latest&os=android&lang=multi" && cd ..
+  - echo "keypass=\"$fdroid_keypass\"" >>config.py
+  - echo "keystorepass=\"$fdroid_keystorepass\"" >>config.py
+  - fdroid update
   - mkdir /fdroid && fdroid server update
   - cp -R /fdroid public
   artifacts:
@@ -16,3 +20,7 @@ pages:
     - public
   only:
   - master
+  - schedules
+  cache:
+    paths:
+    - repo
