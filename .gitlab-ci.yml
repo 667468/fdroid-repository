@@ -10,6 +10,7 @@ pages:
   stage: deploy
   script:
   - cd repo && wget -nc --content-disposition "https://download.mozilla.org/?product=fennec-latest&os=android&lang=multi" && cd ..
+  - cd repo && wget -nc --content-disposition "https://download.mozilla.org/?product=fennec-beta-latest&os=android&lang=multi" && cd ..
   - echo "keypass=\"$fdroid_keypass\"" >>config.py
   - echo "keystorepass=\"$fdroid_keystorepass\"" >>config.py
   - fdroid update
