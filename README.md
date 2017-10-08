@@ -6,7 +6,7 @@ Firefox F-Droid repo (inofficial)
 Add this URL to F-Droid:  
 https://rfc2822.gitlab.io/fdroid-firefox/fdroid/repo?fingerprint=8F992BBBA0340EFE6299C7A410B36D9C8889114CA6C58013C3587CDA411B4AED
 
-[![Repo URL QRcode](public/repo-qrcode.png)](https://rfc2822.gitlab.io/fdroid-firefox/fdroid/repo?fingerprint=8F992BBBA0340EFE6299C7A410B36D9C8889114CA6C58013C3587CDA411B4AED)
+[![Repo URL QRcode](fdroid/public/repo-qrcode.png)](https://rfc2822.gitlab.io/fdroid-firefox/fdroid/repo?fingerprint=8F992BBBA0340EFE6299C7A410B36D9C8889114CA6C58013C3587CDA411B4AED)
 
 All code/work of this repository is put to public domain. This repository
 is not affiliated to, nor has it been authorized, sponsored or
