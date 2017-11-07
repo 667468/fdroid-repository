@@ -1,8 +1,8 @@
 repo_url = "https://rfc2822.gitlab.io/fdroid-firefox/fdroid/"
-repo_name = "Firefox F-Droid repo (inofficial)"
+repo_name = "Firefox F-Droid repo (unofficial)"
 repo_icon = "fdroid-icon.png"
 repo_description = """
-Inofficial Firefox repo (.apk from mozilla.org)
+Unofficial Firefox repo (stable and beta APKs from mozilla.org)
 """
 
 archive_older = 0
