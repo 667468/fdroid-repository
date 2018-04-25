@@ -18,6 +18,7 @@ pages:
   - echo "keystorepass=\"$fdroid_keystorepass\"" >>config.py
   - fdroid update
   - mkdir /fdroid && fdroid server update
+  - rm -rf /fdroid/archive
   - cd .. && mkdir public && mv -v /fdroid public
   artifacts:
     paths:

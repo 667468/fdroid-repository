@@ -5,7 +5,13 @@ repo_description = """
 Unofficial Firefox repo (.apk files from mozilla.org)
 """
 
-archive_older = 0
+archive_url = "https://does.not.exist"
+archive_older = 3
+archive_name = "Firefox archive repo (unofficial)"
+archive_icon = "fdroid-icon.png"
+archive_description = """
+Unofficial Firefox archive repo (.apk files from mozilla.org)
+"""
 
 local_copy_dir = "/fdroid"
 
