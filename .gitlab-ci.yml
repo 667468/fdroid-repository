@@ -12,8 +12,10 @@ pages:
   - cd fdroid
   - (cd repo && wget -nc --content-disposition "https://download.mozilla.org/?product=fennec-latest&os=android&lang=multi")
   - (cd repo && wget -nc --content-disposition "https://download.mozilla.org/?product=fennec-beta-latest&os=android&lang=multi")
-  - (cd repo && wget -N "https://download-installer.cdn.mozilla.net/pub/android/focus/latest/Focus.apk")
-  - (cd repo && wget -N "https://download-installer.cdn.mozilla.net/pub/android/focus/latest/Klar.apk")
+  - (cd repo && wget -N "https://download-installer.cdn.mozilla.net/pub/android/focus/latest/Focus-arm.apk")
+  - (cd repo && wget -N "https://download-installer.cdn.mozilla.net/pub/android/focus/latest/Focus-x86.apk")
+  - (cd repo && wget -N "https://download-installer.cdn.mozilla.net/pub/android/focus/latest/Klar-arm.apk")
+  - (cd repo && wget -N "https://download-installer.cdn.mozilla.net/pub/android/focus/latest/Klar-x86.apk")
   - echo "keypass=\"$fdroid_keypass\"" >>config.py
   - echo "keystorepass=\"$fdroid_keystorepass\"" >>config.py
   - fdroid update
