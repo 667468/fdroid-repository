@@ -12,8 +12,8 @@ pages:
   - cd fdroid
   - (cd repo && wget -nc --content-disposition "https://download.mozilla.org/?product=fennec-latest&os=android&lang=multi")
   - (cd repo && wget -nc --content-disposition "https://download.mozilla.org/?product=fennec-latest&os=android-x86&lang=multi")
-  - (cd repo && wget -nc --content-disposition "https://download.mozilla.org/?product=fennec-beta-latest&os=android&lang=multi")
-  - (cd repo && wget -nc --content-disposition "https://download.mozilla.org/?product=fennec-beta-latest&os=android-x86&lang=multi")
+  - (cd repo && wget -nc --content-disposition "https://download.mozilla.org/?product=fennec-beta-latest&os=android&lang=multi" || (echo "Coudn't download Firefox Beta"; true))
+  - (cd repo && wget -nc --content-disposition "https://download.mozilla.org/?product=fennec-beta-latest&os=android-x86&lang=multi" || (echo "Coudn't download Firefox Beta"; true))
   - (cd repo && wget -N "https://download-installer.cdn.mozilla.net/pub/android/focus/latest/Focus-arm.apk")
   - (cd repo && wget -N "https://download-installer.cdn.mozilla.net/pub/android/focus/latest/Focus-x86.apk")
   - (cd repo && wget -N "https://download-installer.cdn.mozilla.net/pub/android/focus/latest/Klar-arm.apk")
