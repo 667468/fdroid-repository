@@ -15,13 +15,5 @@
   {
     "baseUrl": "https://download-installer.cdn.mozilla.net/pub/android/focus/latest/Klar-{arch}.apk",
     "architectures": ["arm", "x86"]
-  },
-  {
-    "baseUrl": "https://get.videolan.org/vlc-android/{ver}/VLC-Android-{ver}-{arch}.apk",
-    "architectures": ["ARMv7", "ARMv8", "x86", "x86_64"],
-    "version": {
-      "url": "https://code.videolan.org/VideoLAN.org/websites/raw/master/www.videolan.org/include/os-specific.php",
-      "regex": "androidversion = '(.+)'"
-    }
   }
 ]
