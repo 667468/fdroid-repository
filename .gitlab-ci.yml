@@ -5,6 +5,7 @@ before_script:
   - chmod 600 fdroid/config.py keystore.bks
   - mkdir -p fdroid/repo
   - apt-get update && apt-get -y install --no-install-recommends fdroidserver wget
+  - (cd fdroid/repo && while read -r line || [ -n "$line" ]; do rm $line; done < ../../cleanup.txt)
 
 pages:
   stage: deploy

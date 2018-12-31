@@ -7,7 +7,7 @@ Use existing files as a reference or take a look here: [F-Droid Metadata Referen
 
 ## Step 2
 
-Add new download information in [apks.json](../blob/master/apks.json):
+Add new download information in [apks.json](apks.json):
 
 ```json
 {
@@ -24,3 +24,9 @@ Add new download information in [apks.json](../blob/master/apks.json):
 Everything except `baseUrl` is optional.  
 `{ver}` and `{arch}` will get automatically replaced with the corresponding version and all architectures.  
 Note that you can use a single `regex` string instead of `json` to query the version.
+
+---
+
+## Clear cache after removal
+
+Add file names in [cleanup.txt](cleanup.txt) to remove them from cache.
