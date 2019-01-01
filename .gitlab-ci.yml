@@ -9,7 +9,7 @@ before_script:
 pages:
   stage: deploy
   script:
-  - (cd fdroid/repo && while read -r line || [ -n "$line" ]; do rm $line; done < ../../cleanup.txt)
+  - (cd fdroid/repo && while read -r line || [ -n "$line" ]; do rm -f $line; done < ../../cleanup.txt)
   - python3 download.py
   - cd fdroid
   - echo "keypass=\"$fdroid_keypass\"" >>config.py
