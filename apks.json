@@ -15,5 +15,13 @@
   {
     "baseUrl": "https://download-installer.cdn.mozilla.net/pub/android/focus/latest/Klar-{arch}.apk",
     "architectures": ["arm", "x86"]
+  },
+  {
+    "baseUrl": "https://github.com/brave/browser-android-tabs/releases/download/{ver}/Brave{arch}.apk",
+    "architectures": ["arm", "x86"],
+    "version": {
+      "url": "https://api.github.com/repos/brave/browser-android-tabs/releases/latest",
+      "json": "tag_name"
+    }
   }
 ]
