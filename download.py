@@ -11,7 +11,6 @@ def main():
   with open("cache/versions.json") as file:
     versions = json.load(file)
   for apk in apks:
-    print("Downloading "+apk["name"])
     ver = ""
     ignore = False
     if "version" in apk:
@@ -23,6 +22,7 @@ def main():
       if apk["name"] in versions and ver == versions[apk["name"]]:
         break
       versions[apk["name"]] = ver
+    print("Downloading " + apk["name"] + " " + ver)
     if "ignoreErrors" in apk:
       ignore = apk["ignoreErrors"]
     if "architectures" in apk:
@@ -35,9 +35,9 @@ def main():
 
 def download(download_url, ignore):
   if download_url.endswith(".apk"):
-    retcode = subprocess.call(["wget", "-N", "-P", "fdroid/repo", download_url])
+    retcode = subprocess.call(["wget", "--progress=dot:mega", "-N", "-P", "fdroid/repo", download_url])
   else:
-    retcode = subprocess.call(["wget", "-nc", "--content-disposition", "-P", "fdroid/repo", download_url])
+    retcode = subprocess.call(["wget", "--progress=dot:mega", "-nc", "--content-disposition", "-P", "fdroid/repo", download_url])
   if not ignore and retcode != 0:
     raise Exception("Failed downloading " + download_url)
 
