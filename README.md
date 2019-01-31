@@ -1,5 +1,5 @@
-Unofficial F-Droid repo
-=================================
+Unofficial F-Droid repo for various APKs
+========================================
 
 Add this URL to F-Droid:  
 https://rfc2822.gitlab.io/fdroid-firefox/fdroid/repo?fingerprint=8F992BBBA0340EFE6299C7A410B36D9C8889114CA6C58013C3587CDA411B4AED

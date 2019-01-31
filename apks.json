@@ -28,5 +28,13 @@
       "url": "https://api.github.com/repos/brave/browser-android-tabs/releases/latest",
       "json": "tag_name"
     }
+  },
+  {
+    "name": "Signal",
+    "baseUrl": "https://updates.signal.org/android/Signal-website-release-{ver}.apk",
+    "version": {
+      "url": "https://updates.signal.org/android/latest.json",
+      "json": "versionName"
+    }
   }
 ]

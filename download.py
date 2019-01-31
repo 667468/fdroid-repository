@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 import json
 import re
 import requests
@@ -9,6 +11,7 @@ def main():
   with open("cache/versions.json") as file:
     versions = json.load(file)
   for apk in apks:
+    print("Downloading "+apk["name"])
     ver = ""
     ignore = False
     if "version" in apk:
