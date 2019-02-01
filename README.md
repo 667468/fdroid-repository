@@ -1,5 +1,12 @@
-Unofficial F-Droid repo for various APKs
+Unofficial F-Droid repo for various apps
 ========================================
+
+Currently included (alphabetically):
+
+* Brave
+* Firefox, Firefox Beta
+* Firefox Focus / Firefox Klar
+* Signal
 
 Add this URL to F-Droid:  
 https://rfc2822.gitlab.io/fdroid-firefox/fdroid/repo?fingerprint=8F992BBBA0340EFE6299C7A410B36D9C8889114CA6C58013C3587CDA411B4AED
