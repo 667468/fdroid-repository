@@ -20,7 +20,7 @@ def main():
       elif "regex" in verObj:
         ver = get_version_regex(verObj["url"], verObj["regex"])
       if apk["name"] in versions and ver == versions[apk["name"]]:
-        break
+        continue
       versions[apk["name"]] = ver
     print("Downloading " + apk["name"] + " " + ver)
     if "ignoreErrors" in apk:
