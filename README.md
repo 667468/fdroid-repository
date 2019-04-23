@@ -3,6 +3,7 @@ Unofficial F-Droid repo for various apps
 
 Currently included (alphabetically):
 
+* Abrowser
 * Brave
 * Firefox, Firefox Beta
 * Firefox Focus / Firefox Klar
