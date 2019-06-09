@@ -11,6 +11,12 @@
     "ignoreErrors": true
   },
   {
+    "name": "Firefox Nightly",
+    "baseUrl": "https://download.mozilla.org/?product=fennec-nightly-latest&os=android{arch}&lang=multi",
+    "architectures": ["", "-x86"],
+    "ignoreErrors": true
+  },
+  {
     "name": "Firefox Focus",
     "baseUrl": "https://download-installer.cdn.mozilla.net/pub/android/focus/latest/Focus-{arch}.apk",
     "architectures": ["arm", "x86"]
