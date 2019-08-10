@@ -27,9 +27,9 @@ def main():
       ignore = apk["ignoreErrors"]
     if "architectures" in apk:
       for arch in apk["architectures"]:
-        download(apk["baseUrl"].format(arch=arch, ver=ver), ignore)
+        download(apk["baseUrl"].format(arch=arch, ver=ver, ver_stripped=ver.lstrip("v")), ignore)
     else:
-      download(apk["baseUrl"].format(ver=ver), ignore)
+      download(apk["baseUrl"].format(ver=ver, ver_stripped=ver.lstrip("v")), ignore)
   with open('cache/versions.json', 'w') as file:
     json.dump(versions, file, ensure_ascii=False)
 

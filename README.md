@@ -6,6 +6,7 @@ Currently included (alphabetically):
 * Abrowser
 * Brave
 * Firefox, Firefox Beta, Firefox Nightly
+* Firefox Preview
 * Firefox Focus / Firefox Klar
 * Signal
 

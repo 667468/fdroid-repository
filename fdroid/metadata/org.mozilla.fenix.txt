@@ -1,0 +1,9 @@
+License:MPL-2.0
+Source Code:https://github.com/mozilla-mobile/fenix
+Issue Tracker:https://github.com/mozilla-mobile/fenix/issues
+Donate:https://donate.mozilla.org/
+Summary:Firefox Preview
+Categories:Internet
+Description:
+Firefox Preview (internal code name: "Fenix") is an all-new browser for Android, based on GeckoView and Mozilla Android Components.
+.
