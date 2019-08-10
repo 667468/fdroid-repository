@@ -15,6 +15,7 @@ pages:
   - echo "keypass=\"$fdroid_keypass\"" >>config.py
   - echo "keystorepass=\"$fdroid_keystorepass\"" >>config.py
   - fdroid update
+  - rm -rf archive
   - mkdir /fdroid && fdroid server update
   - rm -rf /fdroid/archive
   - cd .. && mkdir public && mv -v /fdroid public
