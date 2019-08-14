@@ -28,4 +28,3 @@ pages:
   cache:
     paths:
     - fdroid
-    - cache
