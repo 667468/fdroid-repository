@@ -1,4 +1,4 @@
-image: debian:stretch-slim
+image: registry.gitlab.com/fdroid/docker-executable-fdroidserver:latest
 
 before_script:
   - echo $fdroid_keystore_base64 | base64 -d >keystore.bks
