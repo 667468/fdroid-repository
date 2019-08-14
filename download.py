@@ -8,8 +8,6 @@ import subprocess
 def main():
   with open("apks.json") as file:
     apks = json.load(file)
-  with open("cache/versions.json") as file:
-    versions = json.load(file)
   for apk in apks:
     ver = ""
     ignore = False
@@ -19,9 +17,6 @@ def main():
         ver = get_version_json(verObj["url"], verObj["json"])
       elif "regex" in verObj:
         ver = get_version_regex(verObj["url"], verObj["regex"])
-      if apk["name"] in versions and ver == versions[apk["name"]]:
-        continue
-      versions[apk["name"]] = ver
     print("Downloading " + apk["name"] + " " + ver)
     if "ignoreErrors" in apk:
       ignore = apk["ignoreErrors"]
@@ -30,8 +25,6 @@ def main():
         download(apk["baseUrl"].format(arch=arch, ver=ver, ver_stripped=ver.lstrip("v")), ignore)
     else:
       download(apk["baseUrl"].format(ver=ver, ver_stripped=ver.lstrip("v")), ignore)
-  with open('cache/versions.json', 'w') as file:
-    json.dump(versions, file, ensure_ascii=False)
 
 def download(download_url, ignore):
   if download_url.endswith(".apk"):
