@@ -4,7 +4,7 @@ before_script:
   - echo $fdroid_keystore_base64 | base64 -d >keystore.bks
   - chmod 600 fdroid/config.py keystore.bks
   - mkdir -p fdroid/repo
-  - apt-get -qq update && apt-get -qqy install --no-install-recommends fdroidserver wget
+  - apt-get update && apt-get -y install --no-install-recommends fdroidserver wget
 
 pages:
   stage: deploy
