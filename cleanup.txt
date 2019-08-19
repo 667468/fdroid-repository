@@ -1,1 +1,2 @@
-VLC-Android-*
+firefox_preview_*
+abrowser-*
