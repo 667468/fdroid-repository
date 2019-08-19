@@ -19,7 +19,7 @@
   {
     "name": "Firefox Preview",
     "baseUrl": "https://github.com/mozilla-mobile/fenix/releases/download/{ver}/firefox_preview_{ver_stripped}.{arch}.apk",
-    "architectures": ["arm", "x86", "x86_64", "aarch64"],
+    "architectures": ["arm", "x86"],
     "version": {
       "url": "https://api.github.com/repos/mozilla-mobile/fenix/releases/latest",
       "json": "tag_name"
@@ -63,7 +63,7 @@
   {
     "name": "Abrowser",
     "baseUrl": "https://github.com/proninyaroslav/abrowser-android/releases/download/{ver}/abrowser-{ver}.en-US.android-{arch}.apk",
-    "architectures": ["arm", "aarch64", "i686", "x86_64"],
+    "architectures": ["arm", "i686"],
     "version": {
       "url": "https://api.github.com/repos/proninyaroslav/abrowser-android/releases/latest",
       "json": "tag_name"
