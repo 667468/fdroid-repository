@@ -26,6 +26,10 @@ Everything except `name` and `baseUrl` is optional.
 `{ver}` and `{arch}` will get automatically replaced with the corresponding version and all architectures.  
 Note that you can use a single `regex` string instead of `json` to query the version.
 
+## Step 3
+
+Add the app to the list in the [Readme](README.md)
+
 ---
 
 ## Clear cache after removal

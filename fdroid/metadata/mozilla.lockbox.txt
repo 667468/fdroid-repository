@@ -1,0 +1,9 @@
+License:MPL-2.0
+Source Code:https://github.com/mozilla-lockwise/lockwise-android
+Web Site:https://lockwise.firefox.com/
+Issue Tracker:https://github.com/mozilla-lockwise/lockwise-android/issues
+Summary:Firefox Lockwise
+Categories:Internet
+Description:
+Firefox Lockwise is an experimental product from Mozilla, the makers of Firefox. It’s an app for iOS and Android that gives you access to passwords you’ve saved to Firefox.
+.

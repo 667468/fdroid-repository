@@ -8,7 +8,9 @@ Currently included (alphabetically):
 * Firefox, Firefox Beta, Firefox Nightly
 * Firefox Preview
 * Firefox Focus / Firefox Klar
+* Firefox Lockwise
 * Signal
+* Wire
 
 Add this URL to F-Droid:
 https://rfc2822.gitlab.io/fdroid-firefox/fdroid/repo?fingerprint=8F992BBBA0340EFE6299C7A410B36D9C8889114CA6C58013C3587CDA411B4AED
@@ -37,6 +39,11 @@ This Gitlab repository contains the complete source code to configure Gitlab CI/
 
 The private key for signing this unofficial F-Droid repository is kept private, but only used for exactly this purpose.<br />
 The APKs are unaltered and hence still signed by the app developers.
+
+How to include new apps?
+========================
+
+Click [here](ADDAPPS.md) to see how to add a new app to this repo.
 
 
 Donations

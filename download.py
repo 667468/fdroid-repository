@@ -22,9 +22,9 @@ def main():
       ignore = apk["ignoreErrors"]
     if "architectures" in apk:
       for arch in apk["architectures"]:
-        download(apk["baseUrl"].format(arch=arch, ver=ver, ver_stripped=ver.lstrip("v")), ignore)
+        download(apk["baseUrl"].format(arch=arch, ver=ver, ver_stripped=ver.lstrip("v"), ver_splitted=ver.split(".")), ignore)
     else:
-      download(apk["baseUrl"].format(ver=ver, ver_stripped=ver.lstrip("v")), ignore)
+      download(apk["baseUrl"].format(ver=ver, ver_stripped=ver.lstrip("v"), ver_splitted=ver.split(".")), ignore)
 
 def download(download_url, ignore):
   if download_url.endswith(".apk"):
