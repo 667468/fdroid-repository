@@ -32,7 +32,8 @@
     "version": {
       "url": "https://api.github.com/repos/mozilla-mobile/focus-android/releases/latest",
       "json": "tag_name"
-    }
+    },
+    "ignoreErrors": true
   },
   {
     "name": "Firefox Klar",
@@ -41,7 +42,8 @@
     "version": {
       "url": "https://api.github.com/repos/mozilla-mobile/focus-android/releases/latest",
       "json": "tag_name"
-    }
+    },
+    "ignoreErrors": true
   },
   {
     "name": "Brave",
