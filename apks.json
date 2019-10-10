@@ -18,7 +18,7 @@
   },
   {
     "name": "Firefox Preview",
-    "baseUrl": "https://github.com/mozilla-mobile/fenix/releases/download/{ver}/firefox_preview_{ver_splitted[0]}.{ver_splitted[1]}_{arch}.apk",
+    "baseUrl": "https://github.com/mozilla-mobile/fenix/releases/download/{ver}/firefox_preview_{ver}_{arch}.apk",
     "architectures": ["armeabi", "x86"],
     "version": {
       "url": "https://api.github.com/repos/mozilla-mobile/fenix/releases/latest",
