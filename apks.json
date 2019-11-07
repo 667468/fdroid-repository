@@ -54,15 +54,6 @@
     }
   },
   {
-    "name": "Firefox Lockwise",
-    "baseUrl": "https://github.com/mozilla-lockwise/lockwise-android/releases/download/{ver}/lockbox-app-release-{ver_splitted[3]}-signed.apk",
-    "version": {
-      "url": "https://api.github.com/repos/mozilla-lockwise/lockwise-android/releases/latest",
-      "json": "tag_name"
-    },
-    "ignoreErrors": true
-  },
-  {
     "name": "Signal",
     "baseUrl": "https://updates.signal.org/android/Signal-website-universal-release-{ver}.apk",
     "version": {
