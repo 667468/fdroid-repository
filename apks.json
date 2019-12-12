@@ -23,7 +23,8 @@
     "version": {
       "url": "https://api.github.com/repos/mozilla-mobile/fenix/releases/latest",
       "json": "tag_name"
-    }
+    },
+    "ignoreErrors": true
   },
   {
     "name": "Firefox Focus",
