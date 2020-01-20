@@ -79,5 +79,9 @@
       "json": "tag_name"
     },
     "ignoreErrors": true
+  },
+  {
+    "name": "Kiwix",
+    "baseUrl": "https://download.kiwix.org/release/kiwix-android/kiwix.apk"
   }
 ]

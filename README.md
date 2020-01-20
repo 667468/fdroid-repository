@@ -9,6 +9,7 @@ Currently included (alphabetically):
 * Firefox Preview
 * Firefox Focus / Firefox Klar
 * Firefox Lockwise
+* Kiwix
 * Signal
 * Wire
 

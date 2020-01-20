@@ -1,0 +1,6 @@
+Web Site:https://www.kiwix.org
+Summary:Kiwix
+Categories:Science & Education
+Description:
+Kiwix lets you access free knowledge – even offline. Store Wikipedia or any website on your mobile phone or computer, easily.
+.
