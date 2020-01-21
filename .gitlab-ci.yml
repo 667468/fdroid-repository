@@ -18,6 +18,7 @@ pages:
   - mkdir /fdroid && fdroid server update
   - rm -rf /fdroid/archive
   - cd .. && mkdir public && mv -v /fdroid public
+  - echo "Repo size:" && du -hs public
   artifacts:
     paths:
     - public
