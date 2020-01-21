@@ -83,5 +83,9 @@
   {
     "name": "Kiwix",
     "baseUrl": "https://download.kiwix.org/release/kiwix-android/kiwix.apk"
+  },
+  {
+    "name": "Spotify",
+    "baseUrl": "http://download.spotify.com/android/SpotifyAndroid.apk"
   }
 ]

@@ -11,6 +11,7 @@ Currently included (alphabetically):
 * Firefox Lockwise
 * Kiwix
 * Signal
+* Spotify
 * Wire
 
 Add this URL to F-Droid:
