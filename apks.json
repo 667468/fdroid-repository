@@ -11,22 +11,6 @@
     "ignoreErrors": true
   },
   {
-    "name": "Firefox Nightly",
-    "baseUrl": "https://download.mozilla.org/?product=fennec-nightly-latest&os=android{arch}&lang=multi",
-    "architectures": ["", "-x86"],
-    "ignoreErrors": true
-  },
-  {
-    "name": "Firefox Preview",
-    "baseUrl": "https://github.com/mozilla-mobile/fenix/releases/download/{ver}/firefox_preview_{ver}_{arch}.apk",
-    "architectures": ["arm", "x86"],
-    "version": {
-      "url": "https://api.github.com/repos/mozilla-mobile/fenix/releases/latest",
-      "json": "tag_name"
-    },
-    "ignoreErrors": true
-  },
-  {
     "name": "Firefox Focus",
     "baseUrl": "https://github.com/mozilla-mobile/focus-android/releases/download/{ver}/Focus-{arch}.apk",
     "architectures": ["arm"],
