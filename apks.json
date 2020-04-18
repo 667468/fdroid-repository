@@ -70,6 +70,6 @@
   },
   {
     "name": "Spotify",
-    "baseUrl": "http://download.spotify.com/android/SpotifyAndroid.apk"
+    "baseUrl": "https://download.spotify.com/android/SpotifyAndroid.apk"
   }
 ]
