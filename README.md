@@ -3,12 +3,10 @@ Unofficial F-Droid repo for various apps
 
 Currently included (alphabetically):
 
-* Abrowser
 * Brave
-* Firefox, Firefox Beta, Firefox Nightly
-* Firefox Preview
+* Firefox
+* Firefox Beta
 * Firefox Focus / Firefox Klar
-* Firefox Lockwise
 * Kiwix
 * Signal
 * Spotify
@@ -39,8 +37,8 @@ on Gitlab pages).<br />
 All necessary actions are performed by [Gitlab CI/CD](https://about.gitlab.com/features/gitlab-ci-cd/).
 This Gitlab repository contains the complete source code to configure Gitlab CI/CD and this F-Droid repository.
 
-The private key for signing this unofficial F-Droid repository is kept private, but only used for exactly this purpose.<br />
-To generate the key run:
+The private key for signing this unofficial F-Droid repository is kept private, but only used for exactly this purpose.
+To generate your own key run:
 ```
 keytool -genkey -v -keystore my.keystore -alias repokey -keyalg RSA -keysize 2048 -validity 10000 -storepass passw0rd1
 ```
@@ -51,15 +49,19 @@ base64 my.keystore
 ```
 Then paste it into to the gitlab variables.
 
-The APKs are unaltered and hence still signed by the app developers.
+**The APKs are unaltered and hence still signed by the app developers.**
 
 How to include new apps?
 ========================
 
 Click [here](ADDAPPS.md) to see how to add a new app to this repo.
 
+Please note that the repo has to be kept small because there's a 1 GB limit on Gitlab pages.
+If you need specific apps, you can fork this repo and maintain your own one.
+
 
 Donations
 =========
 
-If you want to donate, please donate to the respective developers instead!
+If you want to donate, please donate to the respective app developers instead!
+
