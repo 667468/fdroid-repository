@@ -40,6 +40,17 @@ All necessary actions are performed by [Gitlab CI/CD](https://about.gitlab.com/f
 This Gitlab repository contains the complete source code to configure Gitlab CI/CD and this F-Droid repository.
 
 The private key for signing this unofficial F-Droid repository is kept private, but only used for exactly this purpose.<br />
+To generate the key run:
+```
+keytool -genkey -v -keystore my.keystore -alias repokey -keyalg RSA -keysize 2048 -validity 10000 -storepass passw0rd1
+```
+
+Get base64 representation (ASCII only characters) of the certificate:
+```
+base64 my.keystore
+```
+Then paste it into to the gitlab variables.
+
 The APKs are unaltered and hence still signed by the app developers.
 
 How to include new apps?
