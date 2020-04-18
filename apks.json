@@ -47,15 +47,6 @@
     }
   },
   {
-    "name": "Abrowser",
-    "baseUrl": "https://github.com/proninyaroslav/abrowser-android/releases/download/{ver}/abrowser-{ver}.en-US.android-{arch}.apk",
-    "architectures": ["arm", "i686"],
-    "version": {
-      "url": "https://api.github.com/repos/proninyaroslav/abrowser-android/releases/latest",
-      "json": "tag_name"
-    }
-  },
-  {
     "name": "Wire",
     "baseUrl": "https://wire-app.wire.com/android/prod/wire-prod-release-{ver}.apk",
     "version": {
