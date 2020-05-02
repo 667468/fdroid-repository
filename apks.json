@@ -30,15 +30,6 @@
     "ignoreErrors": true
   },
   {
-    "name": "Brave",
-    "baseUrl": "https://github.com/brave/brave-browser/releases/download/{ver}/Brave{arch}.apk",
-    "architectures": ["arm", "x86"],
-    "version": {
-      "url": "https://api.github.com/repos/brave/brave-browser/releases/latest",
-      "json": "tag_name"
-    }
-  },
-  {
     "name": "Signal",
     "baseUrl": "https://updates.signal.org/android/Signal-website-universal-release-{ver}.apk",
     "version": {
