@@ -2,12 +2,12 @@
   {
     "name": "Firefox",
     "baseUrl": "https://download.mozilla.org/?product=fennec-latest&os=android{arch}&lang=multi",
-    "architectures": [""]
+    "architectures": ["", "-x86"]
   },
   {
     "name": "Firefox Beta",
     "baseUrl": "https://download.mozilla.org/?product=fennec-beta-latest&os=android{arch}&lang=multi",
-    "architectures": [""],
+    "architectures": ["", "-x86"],
     "ignoreErrors": true
   },
   {
