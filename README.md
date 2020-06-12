@@ -10,6 +10,7 @@ Currently included (alphabetically):
 * Kiwix
 * Signal
 * Spotify
+* Telegram
 * Wire
 
 Add this URL to F-Droid:
