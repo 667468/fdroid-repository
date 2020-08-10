@@ -49,11 +49,6 @@
     }
   },
   {
-    "name": "Telegram",
-    "baseUrl": "https://telegram.org/dl/android/apk",
-	"forceFileName": "telegram.apk"
-  },
-  {
     "name": "Wire",
     "baseUrl": "https://wire-app.wire.com/android/prod/wire-prod-release-{ver}.apk",
     "version": {
