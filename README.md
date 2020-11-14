@@ -3,14 +3,10 @@ Unofficial F-Droid repo for various apps
 
 Currently included (alphabetically):
 
-* Brave
-* Firefox
-* Firefox Beta
 * Firefox Focus / Firefox Klar
 * Kiwix
 * Signal
 * Spotify
-* Telegram
 * Wire
 
 Add this URL to F-Droid:
