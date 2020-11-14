@@ -11,16 +11,6 @@
     "ignoreErrors": true
   },
   {
-    "name": "Firefox Preview",
-    "baseUrl": "https://github.com/mozilla-mobile/fenix/releases/download/{ver}/firefox_preview_{ver_splitted[0]}.{ver_splitted[1]}_{arch}.apk",
-    "architectures": ["arm", "arm64"],
-    "version": {
-      "url": "https://api.github.com/repos/mozilla-mobile/fenix/releases/latest",
-      "json": "tag_name"
-    },
-    "ignoreErrors": true
-  },
-  {
     "name": "Firefox Focus",
     "baseUrl": "https://github.com/mozilla-mobile/focus-android/releases/download/{ver}/Focus-{arch}.apk",
     "architectures": ["arm", "arm64"],
@@ -37,8 +27,7 @@
     "version": {
       "url": "https://api.github.com/repos/mozilla-mobile/focus-android/releases/latest",
       "json": "tag_name"
-    },
-    "ignoreErrors": true
+    }
   },
   {
     "name": "Signal",
