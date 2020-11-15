@@ -1,6 +1,0 @@
-Web Site:https://www.telegram.org
-Summary:Telegram
-Categories:Internet
-Description:
-Telegram is a cloud-based mobile and desktop messaging app with a focus on security and speed.
-.

@@ -1,7 +1,0 @@
-Web Site:https://www.spotify.com
-Summary:Spotify
-Categories:Multimedia
-Description:
-Spotify Technology S.A. is an international media services provider of Swedish origin.
-This is the proprietary Spotify Android client.
-.

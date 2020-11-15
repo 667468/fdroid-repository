@@ -1,0 +1,12 @@
+Categories:
+  - Multimedia
+License: Unknown
+WebSite: https://www.spotify.com
+
+Summary: Spotify
+Description: |-
+    Spotify Technology S.A. is an international media services provider of Swedish origin.
+    This is the proprietary Spotify Android client.
+
+AutoUpdateMode: None
+UpdateCheckMode: None
