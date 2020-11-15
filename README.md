@@ -3,6 +3,8 @@ Unofficial F-Droid repo for various apps
 
 Currently included (alphabetically):
 
+* Firefox (may sometimes be a release candidate)
+* Firefox Beta
 * Firefox Focus / Firefox Klar
 * Kiwix
 * Signal

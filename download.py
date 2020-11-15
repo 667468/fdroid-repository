@@ -10,7 +10,7 @@ def main():
     apks = json.load(file)
   for apk in apks:
     ver = ""
-    forceFileName = False
+    forceFileName = None
     ignore = False
     if "version" in apk:
       verObj = apk["version"]
@@ -25,13 +25,14 @@ def main():
       ignore = apk["ignoreErrors"]
     if "architectures" in apk:
       for arch in apk["architectures"]:
-        download(apk["baseUrl"].format(arch=arch, ver=ver, ver_stripped=ver.lstrip("v"), ver_splitted=ver.split(".")), forceFileName, ignore)
+        archForceFileName = None if forceFileName is None else forceFileName.format(arch=arch)
+        download(apk["baseUrl"].format(arch=arch, ver=ver, ver_stripped=ver.lstrip("v"), ver_splitted=ver.split(".")), archForceFileName, ignore)
     else:
       download(apk["baseUrl"].format(ver=ver, ver_stripped=ver.lstrip("v"), ver_splitted=ver.split(".")), forceFileName, ignore)
 
 def download(download_url, forceFileName, ignore):
-  if forceFileName:
-    retcode = subprocess.call(["wget", "--progress=dot:mega", "-N", "-P", "fdroid/repo", "-O", forceFileName, download_url])
+  if forceFileName is not None:
+    retcode = subprocess.call(["wget", "--progress=dot:mega", "-N", "-O", "fdroid/repo/" + forceFileName, download_url])
   elif download_url.endswith(".apk"):
     retcode = subprocess.call(["wget", "--progress=dot:mega", "-N", "-P", "fdroid/repo", download_url])
   else:
