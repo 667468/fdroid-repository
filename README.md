@@ -16,6 +16,9 @@ https://rfc2822.gitlab.io/fdroid-firefox/fdroid/repo?fingerprint=8F992BBBA0340EF
 
 [![Repo URL QRcode](fdroid/public/repo-qrcode.png)](https://rfc2822.gitlab.io/fdroid-firefox/fdroid/repo?fingerprint=8F992BBBA0340EFE6299C7A410B36D9C8889114CA6C58013C3587CDA411B4AED)
 
+For some apps, this repo may include APKs of more than one architecture that is compatible with your device, and all of them will appear in the "Versions" list in the F-Droid client.
+To show the architecture of each APK, enable "Expert mode" in the F-Droid settings.
+
 All code and other work in this repository is in the public domain, i.e. licensed as such.<br />
 **Both, this Gitlab repository and this unofficial F-Droid repository
 are not affiliated to, nor have been authorized, sponsored or otherwise approved by the app developers.**
