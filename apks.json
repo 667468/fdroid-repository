@@ -8,7 +8,7 @@
   {
     "name": "Firefox Beta",
     "baseUrl": "https://firefox-ci-tc.services.mozilla.com/api/index/v1/task/mobile.v2.fenix.beta.latest.{arch}/artifacts/public/build/{arch}/target.apk",
-    "architectures": ["arm64-v8a", "armeabi-v7a", "x86", "x86_64"],
+    "architectures": ["arm64-v8a", "armeabi-v7a", "x86"],
     "forceFileName": "org.mozilla.firefox_beta-{arch}.apk"
   },
   {
