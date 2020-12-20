@@ -33,6 +33,7 @@
   {
     "name": "Signal",
     "baseUrl": "https://updates.signal.org/android/Signal-Android-website-prod-universal-release-{ver}.apk",
+    "forceFileName": "Signal-Android.apk",
     "version": {
       "url": "https://updates.signal.org/android/latest.json",
       "json": "versionName"
@@ -41,6 +42,7 @@
   {
     "name": "Wire",
     "baseUrl": "https://wire-app.wire.com/android/prod/wire-prod-release-{ver}.apk",
+    "forceFileName": "wire.apk",
     "version": {
       "url": "https://api.github.com/repos/wireapp/wire-android/releases/latest",
       "json": "tag_name"
