@@ -3,3 +3,5 @@ Brave*.apk
 wire-prod-release*.apk
 Signal-Android-website-prod-universal-release*.apk
 org.mozilla.firefox*x86_64.apk
+icons/*
+icons-*0/*
