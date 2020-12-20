@@ -1,2 +1,7 @@
 abrowser-*
 Brave*.apk
+wire-prod-release-3.59.959.apk
+wire-prod-release-3.61.964.apk
+Signal-Android-website-prod-universal-release-4.76.3.apk
+Signal-Android-website-prod-universal-release-4.79.3.apk
+Signal-Android-website-prod-universal-release-5.0.5.apk
