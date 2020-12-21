@@ -1,3 +1,8 @@
+#!/usr/bin/env python3
+
+from fdroidserver.lint import APPROVED_LICENSES
+lint_licenses = APPROVED_LICENSES.append("Unknown")
+
 repo_url = "https://rfc2822.gitlab.io/fdroid-firefox/fdroid/"
 repo_name = "Firefox F-Droid repo (unofficial)"
 repo_icon = "fdroid-icon.png"
