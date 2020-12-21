@@ -1,0 +1,15 @@
+Categories:
+  - Internet
+License: MPL-2.0
+WebSite: https://www.mozilla.org/firefox/android/nightly/all/
+IssueTracker: https://bugzilla.mozilla.org/
+Donate: https://donate.mozilla.org/
+
+Summary: Firefox Nightly
+Description: |-
+    Nightly version of the Firefox browser for Android.
+    Please note that due to the update frequency of the nightly builds,
+    the apk offered here may be one day/version behind.
+
+AutoUpdateMode: None
+UpdateCheckMode: None

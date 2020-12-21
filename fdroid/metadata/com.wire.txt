@@ -1,9 +1,0 @@
-License:GPL-3.0-only
-Source Code:https://github.com/wireapp/wire-android
-Web Site:https://wire.com
-Issue Tracker:https://github.com/wireapp/wire-android/issues
-Summary:Wire
-Categories:Internet
-Description:
-Wire is the most secure collaboration platform. We increase the productivity in your team while keeping your information private. Wire allows your team to communicate and share information easily and securely - messages, files, conference calls or private conversations - always in context.
-.
