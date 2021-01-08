@@ -13,22 +13,13 @@
   },
   {
     "name": "Firefox Focus",
-    "baseUrl": "https://github.com/mozilla-mobile/focus-android/releases/download/{ver}/Focus-{arch}.apk",
-    "architectures": ["arm", "arm64"],
-    "version": {
-      "url": "https://api.github.com/repos/mozilla-mobile/focus-android/releases/latest",
-      "json": "tag_name"
-    },
-    "ignoreErrors": true
+    "baseUrl": "https://firefox-ci-tc.services.mozilla.com/api/index/v1/task/project.mobile.focus.release.latest/artifacts/public/app-focus-{arch}-release-unsigned.apk",
+    "architectures": ["arm", "aarch64"]
   },
   {
     "name": "Firefox Klar",
-    "baseUrl": "https://github.com/mozilla-mobile/focus-android/releases/download/{ver}/Klar-{arch}.apk",
-    "architectures": ["arm", "arm64"],
-    "version": {
-      "url": "https://api.github.com/repos/mozilla-mobile/focus-android/releases/latest",
-      "json": "tag_name"
-    }
+    "baseUrl": "https://firefox-ci-tc.services.mozilla.com/api/index/v1/task/project.mobile.focus.release.latest/artifacts/public/app-klar-{arch}-release-unsigned.apk",
+    "architectures": ["arm", "aarch64"]
   },
   {
     "name": "Signal",
