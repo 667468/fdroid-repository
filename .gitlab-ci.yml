@@ -29,6 +29,9 @@ build_repo:
     when: always
     paths:
       - public
+  cache:
+    paths:
+    - fdroid
 
 pages:
   stage: deploy
@@ -40,6 +43,3 @@ pages:
   only:
   - master
   - schedules
-  cache:
-    paths:
-    - fdroid
