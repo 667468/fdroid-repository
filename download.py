@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 import json
+import os
 import re
 import requests
 import subprocess
@@ -32,13 +33,26 @@ def main():
 
 def download(download_url, forceFileName, ignore):
   if forceFileName is not None:
-    retcode = subprocess.call(["wget", "--progress=dot:mega", "-N", "-O", "fdroid/repo/" + forceFileName, download_url])
+    fullForceFileName = "fdroid/repo/" + forceFileName
+    retcode = subprocess.call(["wget", "--progress=dot:mega", "-N", "-O", fullForceFileName, download_url])
   elif download_url.endswith(".apk"):
     retcode = subprocess.call(["wget", "--progress=dot:mega", "-N", "-P", "fdroid/repo", download_url])
   else:
     retcode = subprocess.call(["wget", "--progress=dot:mega", "-nc", "--content-disposition", "-P", "fdroid/repo", download_url])
-  if not ignore and retcode != 0:
-    raise Exception("Failed downloading " + download_url)
+  if retcode != 0:
+    if forceFileName is not None:
+      # Under at least some conditions, `wget -O` creates an empty output file
+      # on error, which will break subsequent processing. Even if we're not
+      # ignoring the error, avoid letting the empty file be added to the cache.
+      # (Normally it would be overwritten anyway on the next run, but it might
+      # not be if the configuration has changed.)
+      try:
+        os.unlink(fullForceFileName)
+      except FileNotFoundError:
+        # Not sure if this can happen, but if it does, it's OK.
+        pass
+    if not ignore:
+      raise Exception("Failed downloading " + download_url)
 
 def get_version_regex(url, query):
   request = requests.get(url)
