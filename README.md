@@ -61,6 +61,9 @@ Click [here](ADDAPPS.md) to see how to add a new app to this repo.
 Please note that the repo has to be kept small because there's a 1 GB limit on Gitlab pages.
 If you need specific apps, you can fork this repo and maintain your own one.
 
+See [LICENSE.md](LICENSE) for license info. Please sign your commit
+(git -s) to accept the license.
+
 
 Donations
 =========
