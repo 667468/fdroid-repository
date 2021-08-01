@@ -14,12 +14,14 @@
   {
     "name": "Firefox Focus",
     "baseUrl": "https://firefox-ci-tc.services.mozilla.com/api/index/v1/task/project.mobile.focus.release.latest/artifacts/public/app-focus-{arch}-release-unsigned.apk",
-    "architectures": ["arm", "aarch64"]
+    "architectures": ["arm", "aarch64"],
+    "ignoreErrors": true
   },
   {
     "name": "Firefox Klar",
     "baseUrl": "https://firefox-ci-tc.services.mozilla.com/api/index/v1/task/project.mobile.focus.release.latest/artifacts/public/app-klar-{arch}-release-unsigned.apk",
-    "architectures": ["arm", "aarch64"]
+    "architectures": ["arm", "aarch64"],
+    "ignoreErrors": true
   },
   {
     "name": "Signal",
