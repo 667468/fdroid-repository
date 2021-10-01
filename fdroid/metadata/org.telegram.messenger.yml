@@ -1,11 +1,12 @@
+---
 Categories:
   - Internet
 License: Unknown
 WebSite: https://www.telegram.org
 
 Summary: Telegram
-Description: Telegram is a cloud-based mobile and desktop messaging app with a focus
-    on security and speed.
+Description: Telegram is a cloud-based mobile and desktop messaging app with a
+  focus on security and speed.
 
 AutoUpdateMode: None
 UpdateCheckMode: None

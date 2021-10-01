@@ -1,3 +1,4 @@
+---
 Categories:
   - Internet
 License: MPL-2.0
@@ -7,9 +8,12 @@ Donate: https://donate.mozilla.org/
 
 Summary: Firefox Klar
 Description: |-
-    Firefox Klar gives you a dedicated privacy browser with tracking protection and content blocking on your Android phone or tablet.
+    Firefox Klar gives you a dedicated privacy browser with tracking protection
+    and content blocking on your Android phone or tablet.
 
-    Klar by Firefox is the German-language version and only available in Germany, Austria, and Switzerland. It includes the same features as the English-language app Focus by Firefox. 
+    Klar by Firefox is the German-language version and only available in
+    Germany, Austria, and Switzerland. It includes the same features as the
+    English-language app Focus by Firefox.
 
 AutoUpdateMode: None
 UpdateCheckMode: None

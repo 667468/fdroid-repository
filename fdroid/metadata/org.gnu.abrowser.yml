@@ -1,3 +1,4 @@
+---
 Categories:
   - Internet
 License: MPL-2.0
@@ -7,10 +8,10 @@ IssueTracker: https://github.com/proninyaroslav/abrowser-android/issues
 Donate: https://trisquel.info/en/donate
 
 Summary: Abrowser
-Description: Abrowser is Trisquel's version of Mozilla's popular web browser with
-    the trademarked logos replaced. Abrowser, other that saner default settings to
-    improve privacy, is pretty much Firefox and should provide a quite "neutral" browsing
-    experience.
+Description: Abrowser is Trisquel's version of Mozilla's popular web browser
+    with the trademarked logos replaced. Abrowser, other that saner default
+    settings to improve privacy, is pretty much Firefox and should provide a
+    quite "neutral" browsing experience.
 
 AutoUpdateMode: None
 UpdateCheckMode: None
