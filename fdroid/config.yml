@@ -40,6 +40,7 @@
 
 # Always scan the APKs produced by `fdroid build` for known non-free classes
 # scan_binary: true
+scan_binary: false
 
 # Set the maximum age (in days) of an index that a client should accept from
 # this repo. Setting it to 0 or not setting it at all disables this
@@ -93,6 +94,7 @@ repo_icon: fdroid-icon.png
 # behavior, and lets those APKs stay part of 'repo'.
 #
 # allow_disabled_algorithms: true
+allow_disabled_algorithms: false
 
 # Normally, all apps are collected into a single app repository, like on
 # https://f-droid.org. For certain situations, it is better to make a repo
