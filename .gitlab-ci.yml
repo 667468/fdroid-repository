@@ -18,6 +18,7 @@ build_repo:
   - cd fdroid
   - echo "keypass=\"$fdroid_keypass\"" >>config.py
   - echo "keystorepass=\"$fdroid_keystorepass\"" >>config.py
+  - yamllint metadata/
   - fdroid update
   - rm -rf archive
   - mkdir /fdroid && fdroid deploy
