@@ -3,7 +3,7 @@ image: debian:bullseye
 before_script:
   - apt-get update && apt-get -qy install fdroidserver wget --no-install-recommends
   - echo $fdroid_keystore_base64 | base64 -d >keystore.bks
-  - chmod 600 fdroid/config.py keystore.bks
+  - chmod 600 fdroid/config.yml keystore.bks
   - mkdir -p fdroid/repo
 
 stages:
@@ -16,8 +16,10 @@ build_repo:
   - (cd fdroid/repo && while read -r line || [ -n "$line" ]; do rm -f $line; done < ../../cleanup.txt)
   - ./download.py
   - cd fdroid
-  - echo "keypass=\"$fdroid_keypass\"" >>config.py
-  - echo "keystorepass=\"$fdroid_keystorepass\"" >>config.py
+  - >-
+    echo "keypass: $fdroid_keypass">>config.yml
+  - >-
+    echo "keystorepass: $fdroid_keystorepass">>config.yml
   - yamllint metadata/
   - fdroid lint
   - fdroid update
