@@ -372,5 +372,4 @@ local_copy_dir: /fdroid
 #   - Custom-License-A
 #   - Another-License
 lint_licenses:
-  - Unknown
 
