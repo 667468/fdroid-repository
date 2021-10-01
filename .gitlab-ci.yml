@@ -1,6 +1,7 @@
-image: wonko21/fdroidserver:latest
+image: debian:bullseye
 
 before_script:
+  - apt-get update && apt-get -qy install fdroidserver wget --no-install-recommends
   - echo $fdroid_keystore_base64 | base64 -d >keystore.bks
   - chmod 600 fdroid/config.py keystore.bks
   - mkdir -p fdroid/repo
@@ -19,7 +20,7 @@ build_repo:
   - echo "keystorepass=\"$fdroid_keystorepass\"" >>config.py
   - fdroid update
   - rm -rf archive
-  - mkdir /fdroid && fdroid server update
+  - mkdir /fdroid && fdroid deploy
   - rm -rf /fdroid/archive
   - cd .. && mkdir public && mv -v /fdroid public
   - echo "Repo size:" && du -h -d 3 public
