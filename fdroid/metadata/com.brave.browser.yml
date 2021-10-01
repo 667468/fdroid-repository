@@ -1,3 +1,4 @@
+---
 Categories:
   - Internet
 License: MPL-2.0
@@ -6,9 +7,9 @@ SourceCode: https://github.com/brave/browser-android-tabs/
 IssueTracker: https://github.com/brave/browser-android-tabs/issues
 
 Summary: Brave
-Description: Brave Web Browser is a fast, free, secure web browser for Android with
-    a built-in AdBlock, tracking and security protection, and optimized data and battery
-    experience
+Description: Brave Web Browser is a fast, free, secure web browser for Android
+    with a built-in AdBlock, tracking and security protection, and optimized
+    data and battery experience
 
 AutoUpdateMode: None
 UpdateCheckMode: None
