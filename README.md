@@ -8,7 +8,6 @@ Currently included (alphabetically):
 * Firefox Focus / Firefox Klar
 * Kiwix
 * Signal
-* Spotify
 * Wire
 
 Add this URL to F-Droid:
